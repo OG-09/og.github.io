@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY LOGIN PAGE</title>
+    </head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginpagestyle.css">
+    <script src="loginpagejs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <body>
+        <h2 class="wel">WELCOME BACK!</h2>
+        <div class="allforms">
+        <div class="main" id="loginform">
+        <div class="sec">
+        <h2>Login</h2>
+        <div class="hr"></div>
+        <div class="nmain">
+        <form class="from">
+            <img src="https://i.ibb.co/JktW7pR/20230617-224517.png" alt="emailicon"><br>
+            <input type="email" id="em" placeholder="your email" required><br>
+            <img src="https://i.ibb.co/YTDMh3S/20230616-103108.png" alt="pdicon" id="picon"><br>
+            <input type="password" id="pd" placeholder="enter password" required>
+            <a href="#" onclick="alert(`I don't know your password🙂`)">forgot password?</a>
+        <br>
+        <input type="submit" value="LOGIN" id="sub" onclick="cl()">
+        </form>
+        <button onclick="cleartext()" id="clr">x</button>
+        <button onclick="cleartxt()" id="cler">x</button>
+        <div class="btm" style="align:center">
+       <div id="sp">Don't have an account? <a href="#" onclick="showsignupform()" style="color:#7d2ae8; cursor:pointer;">Sign up</a></div>
+       </div>
+        </div>
+        </div>
+        </div>
+         <div class="coverbox" id="signupform">
+        <h2>Sign up</h2>
+        <div class="anhr"></div>
+            <div class="signup">
+                <div class="formbox">
+                        <form>
+                        <img src="https://i.ibb.co/7rDZB6Y/20230616-102854.png" alt="icon">
+                            <input type="text" placeholder="your name" id="tx" required><br>
+                            <img src="https://i.ibb.co/JktW7pR/20230617-224517.png" alt="icon">
+                            <input type="email" placeholder="your email" id="eml" required><br>
+                            <img src="https://i.ibb.co/YTDMh3S/20230616-103108.png" alt="icon">
+                           <input  type="password" placeholder="password" id="p" required maxlength=""><br>
+                           <input type="submit" value="SIGN UP" id="subt" onclick="sigup()">
+                        </form>
+                        <button id="supclr" onclick="cleartx()">x</button>
+                        <button id="supcl" onclick="clearr()">x</button>
+                        <button id="supcler" onclick="clearrr()">x</button>
+                </div>
+            </div>
+            <div class="btmli">Already have an account? <a href="#" onclick="showloginform()" for="flip" id="lgn">Log in</a></div>
+        </div>
+        </div>
+        <footer>
+            <div class="foot">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+                </ul>
+                <p>© All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>
