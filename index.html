@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="login.js"></script>
+</head>
+<body>
+    
+    <!-- Log in Page -->
+    
+    <h1 style="text-align: center;">LOG IN/SIGN UP <br>PAGE</h1>
+    <div class="loginbox" id="lgbox">
+        <div class="loginform">
+            <h2>Log in</h2>
+            <div class="txtanimation"></div>
+            <div class="regform">
+                <form>
+                    <div class="inputbox">
+                        <input type="email" placeholder="your email" required id="emlg">
+                        <input type="password" placeholder="your password" required id="pdlg">
+                        <a href="" id="fpass">forgot password?</a><br>
+                        <div class="subbtn"><input type="submit" value="SUBMIT" id="lgbtn" onclick="checklg()"></div>
+                    </div>
+                </form>
+                <div class="btmtxt">Don't have an account? <font onclick="showsignup()">Sign up now</font></div>
+            </div>
+        </div>
+    </div>
+          
+   
+   
+   <!-- Sign up Page -->
+   
+   <div class="signupbox" id="sgbox">
+       <div class="signupform">
+           <h2>Sign up</h2>
+            <div class="txtanimation"></div>
+            <div class="regform">
+                <form>
+                    <div class="inputbox">
+                        <input type="text" placeholder="your name" required id="sgname">
+                        <input type="email" placeholder="your email" required id="sgemail">
+                        <input type="password" placeholder="your password" required id="sgpd">
+                        <div class="subbtn"><input type="submit" value="SUBMIT" id="sgbtn" onclick="checksg()"></div>
+                    </div>
+                </form>
+                <div class="btmtxt">Already have an account? <font onclick="showlogin()">Log in</font></div>
+            </div>
+       </div>
+   </div>
+   <footer>
+       <div>
+           <ul>
+               <li><a >About</a></li>
+               <li><a >Home</a></li>
+               <li><a >Contact</a></li>
+           </ul>
+       </div>
+       <p style="text-align: center;color:#a6a6a6">ÕG © 2023 copyright</p>
+   </footer>
+</body>
+</html>
