@@ -1,0 +1,118 @@
+*{
+    font-family:"Poppins", sans-serif;
+}
+body{
+    background-color:#00c0ff12;
+}
+.regform{
+    margin: 50px 0px;
+}
+.loginbox{
+    background-color:#009fbe ;
+    max-width:500px;
+    margin :0 auto;
+    border-radius: 10px;
+}
+.loginform{
+    margin: 0 auto;
+    padding:20px;
+}
+.txtanimation{
+    width:20px;
+    height: 2.5px;
+    margin-top:-20px ;
+    background-color:#ffffff ;
+    border-radius: 10px;
+    animation:slide 3s ease-in infinite;
+}
+.inputbox input[type="email"], .inputbox input[type="password"],  .inputbox input[type="text"]{
+    width: 90%;
+    color: white;
+    font-weight:600;
+    font-size:15px;
+    max-width:400px;
+    background-color: transparent;
+    border:1px solid white;
+    border-bottom:2.5px solid white;
+    border-radius:5px;
+    padding:15px;
+    position: relative;
+    margin: 5px;
+}
+.inputbox input:focus{
+    outline:none;
+    border:1px solid #003243;
+    border-bottom:2.5px solid #003243;
+}
+.inputbox input::placeholder{
+    color:#003243;
+    font-weight:600;
+    font-size:17px;
+}
+.inputbox #fpass{
+    font-size:11px;
+    color:#a400ff;
+    text-decoration: none;
+}
+.inputbox input[type="submit"]{
+    border: none;
+    border-radius: 20px;
+    background-color:#003243;
+    color: white;
+    font-weight:700;
+    padding :5px 30px;
+    margin:15px 0px;
+}
+.subbtn{
+    display :flex;
+    align-items: center;
+    justify-content :center;
+}
+.regform .btmtxt{
+    text-align: center;
+    padding: 20px 0 0 0;
+    color: white;
+    font-size:13px
+}
+.regform font{
+    color: #a400ff;
+    cursor:pointer;
+}
+.signupbox{
+    background-color:#009fbe ;
+    max-width:500px;
+    margin :0 auto;
+    border-radius: 10px;
+    display: none;
+}
+.signupform{
+    margin: 0 auto;
+    padding:20px;
+}
+@keyframes slide{
+    0%{transform:translateX(0px);width:20px;}
+    50%{transform:translateX(50px);width:35px;}
+    100%{transform:translateX(-30px);width:25px;}
+    100%{transform:translateX(0px);width:20px;}
+}
+footer{
+    background-color:#474747;
+}
+footer div ul{
+    list-style-type:none;
+    display :flex;
+    align-items: center;
+    justify-content :center;
+}
+footer li{
+    padding: 20px;
+}
+footer a {
+    text-decoration :none;
+    color: white;
+}
+footer a:hover{
+    text-decoration : underline;
+    color: blue;
+}
+ 
